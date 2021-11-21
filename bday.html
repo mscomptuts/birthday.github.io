@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday🎉</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main_header">
+        <div id="cf3" class="shadow"></div>
+        <div id = "cf3" class="center_div1">
+            <p class = "bday" id = "bday">
+               <span id="hbday">🎉HAPPY BIRTHDAY🎉</span> 
+                <br/>
+                <span id="name">🎂🥳 Tanmay!!! 🥳🎂</span>
+            </p>
+            <audio id="player" controls autoplay>
+                <source src="./assets/Happy Birthday To You Instrumental Tone.mp3" type="audio/mp3">
+            </audio>
+        </div>   
+    </div>
+        
+    <script src="./confetti.js"></script>
+    
+    <script>
+         
+         const startit = () => {
+            setTimeout(function(){
+                console.log('start');
+                confetti.start();
+            }, 100)
+         };
+
+         const stopit = () => {
+            setTimeout(function(){
+                console.log('stop');
+                confetti.stop();
+            }, 38000)
+         };
+
+         startit();
+         stopit();
+    </script>
+</body>
+</html>
